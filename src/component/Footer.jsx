@@ -34,6 +34,14 @@ const Footer = () => (
       >
         <i className="fa fa-twitter"> Twitter</i>
       </a>
+      <a
+        rel="noopener noreferrer"
+        href="https://github.com/mohammadrad007"
+        target="_blank"
+        title="GitHub"
+      >
+        <i className="fa fa-github"> GitHub</i>
+      </a>
       <a rel="noopener noreferrer" href="" target="_blank" title="email">
         <i className="fa fa-at"> saberzx313@gmail.com</i>
       </a>
