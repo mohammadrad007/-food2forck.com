@@ -3,7 +3,7 @@ import "./App.css";
 import Form from "./component/Form";
 import Recipes from "./component/Recipes";
 
-const API_KEY = "2cd3fb12cb6b37da9fe2fef820c5bef3";
+const API_KEY = "dd24f9fa6e69dda9e98138263a93a311";
 class App extends Component {
   state = {
     recipes: []
