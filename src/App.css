@@ -103,6 +103,11 @@ button:focus {
   font-weight: 500;
   margin-left: 0.7rem;
 }
+.form__button:hover {
+  border: solid 2px #353030;
+  background: #e74c3c;
+  color: #f3f3f3;
+}
 
 input[type="text"] {
   outline: none;
@@ -116,14 +121,18 @@ input:-webkit-autofill {
 /******** RECIPE.js ********/
 
 .active-recipe {
-  margin: 0 auto;
+  margin: 3rem auto;
   width: 60%;
 }
 
 .active-recipe__img {
   height: 500px !important;
+  border-radius: 5px;
 }
-
+.active-recipe__img:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
 .active-recipe__title {
   text-transform: uppercase;
   letter-spacing: 2px;

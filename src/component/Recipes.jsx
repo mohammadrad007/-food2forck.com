@@ -7,7 +7,7 @@ const Recipes = props => (
     <div className="row">
       {props.recipes.map(recipe => (
         <div
-          key={recipe.title}
+          key={recipe.recipe_id}
           className="col-md-4"
           style={{ marginBottom: "2rem" }}
         >
