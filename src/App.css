@@ -1,5 +1,9 @@
 body {
   background: #f3f3f3;
+  font-family: "Open Sans", sans-serif !important;
+}
+.text-slanted {
+  font-family: "Courgette", cursive !important;
 }
 ::selection {
   background: #2c3e50 !important;
@@ -69,7 +73,6 @@ button:focus {
 }
 
 .recipes__subtitle {
-  text-transform: uppercase;
   font-weight: 600;
   font-size: 0.8rem;
   letter-spacing: 2px;
@@ -194,7 +197,8 @@ input:-webkit-autofill {
 
 .card__footer__body {
   background: #2c3e50f7;
-  color: #f8eeee;
+  color: #ca7a7a;
+  text-shadow: 12px 9px 10px #000;
 }
 .card__footer__body a {
   display: flex;
@@ -205,8 +209,13 @@ input:-webkit-autofill {
 }
 .card__footer__body a:hover {
   font-size: 1.5rem !important;
-  color: #f8eeee !important;
+  color: #ca7a7a !important;
+  text-shadow: 0 0 0 #000;
 }
 .card__footer__body a i {
   font-size: 1.3rem;
+}
+.coffe {
+  color: #502222a8 !important;
+  text-shadow: 7px 12px 19px #000;
 }

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
-const API_KEY = "27570c82ff11c088c3b8d650602a2e00";
+const API_KEY = "d7272492d7ee1cf276e9ced5d09e4732";
 
 class Recipe extends Component {
   state = {
@@ -16,6 +16,7 @@ class Recipe extends Component {
       );
 
       const res = await req.json();
+
       this.setState({ activeRecipe: res.recipes[0] });
     } catch (error) {
       console.log(error);
@@ -23,7 +24,7 @@ class Recipe extends Component {
   };
   render() {
     const recipe = this.state.activeRecipe;
-    console.log(recipe.title);
+    console.log(this.props);
     return (
       <div className="container">
         {this.state.activeRecipe.length !== 0 && (
@@ -34,7 +35,7 @@ class Recipe extends Component {
                   <Link to="/">Go Back Home</Link>
                 </button>
                 <img
-                  className=" d-block w-100"
+                  className=" d-block w-100 active-recipe__img"
                   src={recipe.image_url}
                   alt={recipe.title}
                 />

@@ -5,10 +5,11 @@ import Recipes from "./component/Recipes";
 import Header from "./component/Header";
 import Footer from "./component/Footer";
 
-const API_KEY = "27570c82ff11c088c3b8d650602a2e00";
+const API_KEY = "d7272492d7ee1cf276e9ced5d09e4732";
 class App extends Component {
   state = {
-    recipes: []
+    recipes: [],
+    error: ""
   };
 
   getRecipe = async e => {
@@ -20,7 +21,14 @@ class App extends Component {
       );
 
       const data = await api_call.json();
-      this.setState({ recipes: data.recipes });
+      console.log(data.recipes.length);
+      if (data.recipes.length === 0) {
+        this.setState({
+          error: "sory, but your search did not return any results"
+        });
+      } else {
+        this.setState({ recipes: data.recipes, error: "" });
+      }
     } catch (err) {
       console.log(err);
     }
@@ -41,7 +49,7 @@ class App extends Component {
       <div className="App">
         <Header />
         <Form getRecipe={this.getRecipe} />
-        <Recipes recipes={this.state.recipes} />
+        <Recipes recipes={this.state.recipes} error={this.state.error} />
         <Footer />
       </div>
     );

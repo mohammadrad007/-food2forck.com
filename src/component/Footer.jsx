@@ -1,6 +1,6 @@
 import React from "react";
 const Footer = () => (
-  <div className="card text-center card__footer">
+  <div className="card text-center card__footer text-slanted">
     <div className="card-header card__footer__made contact">
       <h5>Contact us</h5>
     </div>
@@ -47,8 +47,9 @@ const Footer = () => (
       </a>
     </div>
     <div className="card-footer text-muted card__footer__made">
-      Made with <i className="fa fa-heart"> And .</i>
-      <i className="fa fa-coffee"> . </i>
+      Made with <i className="fa fa-heart card__footer__body mr-2" />
+      And
+      <i className="fa fa-coffee ml-2 coffe" />
     </div>
   </div>
 );
