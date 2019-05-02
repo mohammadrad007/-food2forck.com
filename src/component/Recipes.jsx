@@ -8,7 +8,7 @@ const Recipes = props => (
       {props.recipes.map(recipe => (
         <div
           key={recipe.recipe_id}
-          className="col-md-4"
+          className="col-lg-4 col-md-6"
           style={{ marginBottom: "2rem" }}
         >
           <div className="recipes__box">
@@ -23,20 +23,29 @@ const Recipes = props => (
                   ? `${recipe.title}`
                   : `${recipe.title.substring(0, 22)}...`}
               </h5>
-              <p className="recipes__subtitle">
+              <p className="recipes__subtitle text-slanted">
                 Publisher: <span>{recipe.publisher}</span>
               </p>
             </div>
-            <button className="recipe_buttons">
-              <Link
-                to={{
-                  pathname: `/recipe/${recipe.recipe_id}`,
-                  state: { recipe: recipe.title }
-                }}
+            <div className="card-footer">
+              <button type="button" className="recipe_buttons">
+                <Link
+                  to={{
+                    pathname: `/recipe/${recipe.recipe_id}`,
+                    state: { recipe: recipe.title }
+                  }}
+                >
+                  View Recipe
+                </Link>
+              </button>
+              <a
+                target="_blank"
+                href={recipe.source_url}
+                className="recipe_buttons"
               >
-                View Recipe
-              </Link>
-            </button>
+                recipe url
+              </a>
+            </div>
           </div>
         </div>
       ))}

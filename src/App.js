@@ -5,7 +5,7 @@ import Recipes from "./component/Recipes";
 import Header from "./component/Header";
 import Footer from "./component/Footer";
 
-const API_KEY = "dd24f9fa6e69dda9e98138263a93a311";
+const API_KEY = "27570c82ff11c088c3b8d650602a2e00";
 class App extends Component {
   state = {
     recipes: []

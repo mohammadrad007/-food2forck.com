@@ -12,6 +12,8 @@ img {
 
 a {
   color: #e74c3c !important;
+  text-decoration: none !important;
+  cursor: pointer !important;
 }
 
 button:focus {
@@ -35,15 +37,15 @@ button:focus {
 }
 
 .recipe_buttons {
+  display: inline-block;
   border: solid 2px #e74c3c;
   background: transparent;
   padding: 0.4rem 0.6rem;
-  margin: 0 0.2rem;
   border-radius: 1px;
   font-size: 0.8rem;
   text-transform: uppercase;
   font-weight: 500;
-  margin-left: 0.7rem;
+  margin: 0.2rem 1.5rem;
 }
 
 .recipes__box {
@@ -114,7 +116,6 @@ input[type="text"] {
 }
 
 input:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0 30px #f3f3f3 inset;
   -webkit-text-fill-color: #2c3e50 !important;
 }
 
@@ -141,6 +142,11 @@ input:-webkit-autofill {
 
 .active-recipe__publisher,
 .active-recipe__website {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.active-recipe__url {
   text-transform: uppercase;
   font-size: 1.2rem;
   margin-bottom: 1rem;

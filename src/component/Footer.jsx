@@ -42,7 +42,7 @@ const Footer = () => (
       >
         <i className="fa fa-github"> GitHub</i>
       </a>
-      <a rel="noopener noreferrer" href="" target="_blank" title="email">
+      <a rel="noopener noreferrer" target="_blank" title="email">
         <i className="fa fa-at"> saberzx313@gmail.com</i>
       </a>
     </div>
