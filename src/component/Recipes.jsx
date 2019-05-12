@@ -49,6 +49,7 @@ const Recipes = props => (
                   target="_blank"
                   href={recipe.source_url}
                   className="recipe_buttons"
+                  rel="noopener noreferrer"
                 >
                   recipe url
                 </a>

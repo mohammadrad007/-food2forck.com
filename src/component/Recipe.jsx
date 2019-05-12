@@ -12,7 +12,7 @@ class Recipe extends Component {
       const title = this.props.location.state.recipe;
 
       const req = await fetch(
-        `https://cors-anywhere.herokuapp.com/https://www.food2fork.com/api/search?key=${API_KEY}&q=${title}`
+        `https://www.food2fork.com/api/search?key=${API_KEY}&q=${title}`
       );
 
       const res = await req.json();
